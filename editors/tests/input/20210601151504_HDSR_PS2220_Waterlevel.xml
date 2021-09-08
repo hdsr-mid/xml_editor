@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<TimeSeries version="1.2" xmlns="http://www.wldelft.nl/fews/PI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wldelft.nl/fews/PI http://fews.wldelft.nl/schemas/version1.0/pi-schemas/pi_timeseries.xsd">
+  <series>
+    <header>
+      <type>instantaneous</type>
+      <locationId>PS2220</locationId>
+      <parameterId>h</parameterId>
+      <qualifierId>mcc</qualifierId>
+      <timeStep unit="nonequidistant"/>
+      <startDate date="2021-06-01" time="15:00:39"/>
+      <endDate date="2021-06-01" time="15:02:04"/>
+      <missVal>-999</missVal>
+      <sourceOrganisation>Mobile Water Management</sourceOrganisation>
+      <sourceSystem>BES</sourceSystem>
+      <creationDate>2021-06-01</creationDate>
+      <creationTime>15:15:04</creationTime>
+    </header>
+    <event comment="https://ftp2.mobielwatermeten.nl/hdsr_photos/2021-06/20210601150039_HDSR_PS2220_Waterlevel.jpg" date="2021-06-01" flag="3" time="15:00:39" user="Aad Versteeg" value="-1.33"/>
+    <event comment="https://ftp2.mobielwatermeten.nl/hdsr_photos/2021-06/20210601150204_HDSR_PS2220_Waterlevel.jpg" date="2021-06-01" flag="3" time="15:02:04" user="Aad Versteeg" value="-1.37"/>
+  </series>
+</TimeSeries>
