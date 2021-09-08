@@ -41,7 +41,8 @@ pip-delete-this-directory.txt
 htmlcov/
 .tox/
 .nox/
-.coverage
+*.coverage
+# .coveragerc
 .coverage.*
 .cache
 nosetests.xml
@@ -127,3 +128,19 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# ----------------------------
+# Idea stuff below
+# ----------------------------
+.DS_Store
+*.idea
+.idea/
+
+# File-based project format
+*.iws
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/

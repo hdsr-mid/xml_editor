@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<TimeSeries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="http://www.wldelft.nl/fews/PI http://fews.wldelft.nl/schemas/version1.0/pi-schemas/pi_timeseries.xsd">
+	<series>
+		<header>
+			<type>instantaneous</type>
+			<locationId>PS1313</locationId>
+			<parameterId>h</parameterId>
+			<qualifierId>mcc</qualifierId>
+			<timeStep unit="nonequidistant" />
+			<startDate date="2015-12-15" time="10:46:37" />
+			<endDate date="2015-12-15" time="10:46:37" />
+			<missVal>NaN</missVal>
+			<sourceOrganisation>Mobile Water Management</sourceOrganisation>
+			<sourceSystem>DEV</sourceSystem>
+			<creationDate>2016-04-19</creationDate>
+			<creationTime>22:11:17</creationTime>
+		</header>
+		<event comment="https://ftp2.mobielwatermeten.nl/hdsr_photos/2015-12/20151215104637_HDSR_PS1313_Waterlevel.jpg" date="2015-12-15" flag="1" time="10:46:37" value="-2.100" />
+	</series>
+</TimeSeries>
