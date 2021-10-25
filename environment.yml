@@ -4,7 +4,7 @@ channels:
   - r
 dependencies:
   - python=3.7
-  - xml
+  - lxml
   - pathlib
   - typing
   - isort  # only required for auto-format code
