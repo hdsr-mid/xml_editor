@@ -26,3 +26,24 @@ exclude = '''
   | profiling
 )/
 '''
+
+# pytest coverage (you need pytest-cov installed, then run 'pytest --cov')
+[tool.coverage.run]
+source = ['.']
+omit = [
+    # omit anything in a .local directory anywhere
+    '*/.local/*',
+    '__init__.py',
+    # omit anything that is a test
+    'tests/*',
+    'test/*',
+    '*/tests/*',
+    '*/tests/*',
+    # omit anything in a .venv directory anywhere
+    '.venv/*'
+]
+
+# pytest coverage (you need pytest-cov installed, then run 'pytest --cov')
+[tool.coverage.report]
+skip_empty = true
+show_missing = false
