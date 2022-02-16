@@ -4,7 +4,55 @@
 * Python version: 3.7
 
 ### Description
-todo
+MWM: edit .xml:
+- edit event field 'comment' was used for a link to .jpg as MWM-app did not facilitate comments, but does now. So change it to comment=""
+- add event field 'flagsource': flagsource="UR" --> points to template so FEWS can show peilschaal .jpg
+MWM .xml orig:
+``
+<?xml version="1.0" ?>
+<TimeSeries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="http://www.wldelft.nl/fews/PI http://fews.wldelft.nl/schemas/version1.0/pi-schemas/pi_timeseries.xsd">
+	<series>
+		<header>
+			<type>instantaneous</type>
+			<locationId>PS1045</locationId>
+			<parameterId>h</parameterId>
+			<qualifierId>mcc</qualifierId>
+			<timeStep unit="nonequidistant" />
+			<startDate date="2016-10-17" time="08:31:44" />
+			<endDate date="2016-10-17" time="08:31:44" />
+			<missVal>NaN</missVal>
+			<sourceOrganisation>Mobile Water Management</sourceOrganisation>
+			<sourceSystem>DEV</sourceSystem>
+			<creationDate>2016-10-17</creationDate>
+			<creationTime>08:36:42</creationTime>
+		</header>
+		<event comment="https://ftp2.mobielwatermeten.nl/hdsr_photos/2016-10/20161017083144_HDSR_PS1045_Waterlevel.jpg" date="2016-10-17" flag="3" time="08:31:44" value="-0.090" />
+	</series>
+</TimeSeries>
+```
+MWM .xml new:
+```
+<?xml version='1.0' encoding='UTF-8'?>
+<TimeSeries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="http://www.wldelft.nl/fews/PI http://fews.wldelft.nl/schemas/version1.0/pi-schemas/pi_timeseries.xsd">
+	<series>
+		<header>
+			<type>instantaneous</type>
+			<locationId>PS1045</locationId>
+			<parameterId>h</parameterId>
+			<qualifierId>mcc</qualifierId>
+			<timeStep unit="nonequidistant" />
+			<startDate date="2016-10-17" time="08:31:44" />
+			<endDate date="2016-10-17" time="08:31:44" />
+			<missVal>NaN</missVal>
+			<sourceOrganisation>Mobile Water Management</sourceOrganisation>
+			<sourceSystem>DEV</sourceSystem>
+			<creationDate>2016-10-17</creationDate>
+			<creationTime>08:36:42</creationTime>
+		</header>
+		<event comment="" date="2016-10-17" flag="3" flagsource="UR" time="08:31:44" value="-0.090" />
+	</series>
+</TimeSeries>
+```
 
 ### Usage
 1. build conda environment from file if you don't have environment already
