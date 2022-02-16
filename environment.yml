@@ -1,7 +1,6 @@
 channels:
-  - defaults
   - conda-forge
-  - r
+  - hdsr-mid
 dependencies:
   - python=3.7
   - lxml
@@ -11,6 +10,4 @@ dependencies:
   - black  # only required for auto-format code
   - pytest  # only required for running tests
   - pytest-cov  # only required for running tests coverage
-  - pip
-  - pip:
-    - path_finder>=1.4
+  - path-finder  # on conda channel hdsr-mid

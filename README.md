@@ -20,14 +20,14 @@ todo
 ### License 
 [MIT][mit]
 
-[mit]: https://github.com/hdsr-mid/mwm_ps_update/blob/main/LICENSE.txt
+[mit]: https://github.com/hdsr-mid/xml_editor/blob/main/LICENSE.txt
 
 ### Releases
 None
 
 ### Contributions
 All contributions, bug reports, bug fixes, documentation improvements, enhancements 
-and ideas are welcome on https://github.com/hdsr-mid/xml_ediort/issues
+and ideas are welcome on https://github.com/hdsr-mid/xml_editor/issues
 
 ### Test Coverage 
 Project holds no tests

@@ -12,7 +12,7 @@ mapper = {
 }
 
 
-def test_new_xml_has_no_namespace():
+def test_new_mwm_xml_has_no_namespace():
     xml_1 = BASE_DIR / "tests" / "input" / "20151215104633_HDSR_PS1313_Waterlevel.xml"
     xml_2 = BASE_DIR / "tests" / "input" / "20210601151504_HDSR_PS2220_Waterlevel.xml"
     assert xml_1.is_file() and xml_2.is_file()
