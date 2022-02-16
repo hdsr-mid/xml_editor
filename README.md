@@ -13,18 +13,7 @@ MWM: edit .xml:
 <TimeSeries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="http://www.wldelft.nl/fews/PI http://fews.wldelft.nl/schemas/version1.0/pi-schemas/pi_timeseries.xsd">
 	<series>
 		<header>
-			<type>instantaneous</type>
-			<locationId>PS1045</locationId>
-			<parameterId>h</parameterId>
-			<qualifierId>mcc</qualifierId>
-			<timeStep unit="nonequidistant" />
-			<startDate date="2016-10-17" time="08:31:44" />
-			<endDate date="2016-10-17" time="08:31:44" />
-			<missVal>NaN</missVal>
-			<sourceOrganisation>Mobile Water Management</sourceOrganisation>
-			<sourceSystem>DEV</sourceSystem>
-			<creationDate>2016-10-17</creationDate>
-			<creationTime>08:36:42</creationTime>
+			...
 		</header>
 		<event comment="https://ftp2.mobielwatermeten.nl/hdsr_photos/2016-10/20161017083144_HDSR_PS1045_Waterlevel.jpg" date="2016-10-17" flag="3" time="08:31:44" value="-0.090" />
 	</series>
@@ -36,18 +25,7 @@ MWM: edit .xml:
 <TimeSeries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="http://www.wldelft.nl/fews/PI http://fews.wldelft.nl/schemas/version1.0/pi-schemas/pi_timeseries.xsd">
 	<series>
 		<header>
-			<type>instantaneous</type>
-			<locationId>PS1045</locationId>
-			<parameterId>h</parameterId>
-			<qualifierId>mcc</qualifierId>
-			<timeStep unit="nonequidistant" />
-			<startDate date="2016-10-17" time="08:31:44" />
-			<endDate date="2016-10-17" time="08:31:44" />
-			<missVal>NaN</missVal>
-			<sourceOrganisation>Mobile Water Management</sourceOrganisation>
-			<sourceSystem>DEV</sourceSystem>
-			<creationDate>2016-10-17</creationDate>
-			<creationTime>08:36:42</creationTime>
+			...
 		</header>
 		<event comment="" date="2016-10-17" flag="3" flagsource="UR" time="08:31:44" value="-0.090" />
 	</series>
