@@ -7,8 +7,8 @@
 MWM: edit .xml:
 - edit event field 'comment' was used for a link to .jpg as MWM-app did not facilitate comments, but does now. So change it to comment=""
 - add event field 'flagsource': flagsource="UR" --> points to template so FEWS can show peilschaal .jpg
-MWM .xml orig:
-``
+- MWM .xml orig:
+```
 <?xml version="1.0" ?>
 <TimeSeries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="http://www.wldelft.nl/fews/PI http://fews.wldelft.nl/schemas/version1.0/pi-schemas/pi_timeseries.xsd">
 	<series>
@@ -30,7 +30,7 @@ MWM .xml orig:
 	</series>
 </TimeSeries>
 ```
-MWM .xml new:
+- MWM .xml new:
 ```
 <?xml version='1.0' encoding='UTF-8'?>
 <TimeSeries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="http://www.wldelft.nl/fews/PI http://fews.wldelft.nl/schemas/version1.0/pi-schemas/pi_timeseries.xsd">
