@@ -32,14 +32,15 @@ and ideas are welcome on https://github.com/hdsr-mid/xml_editor/issues
 ### Test Coverage 
 Project holds no tests
 ```
----------- coverage: platform win32, python 3.7.11-final-0 ----
+---------- coverage: platform win32, python 3.7.12-final-0 -----
 Name                   Stmts   Miss  Cover
 ------------------------------------------
-editors\constants.py       5      0   100%
-editors\mwm_xmls.py       70     14    80%
+editors\constants.py       6      0   100%
+editors\mwm_xmls.py       64     14    78%
+editors\utils.py           7      0   100%
 main.py                   18     18     0%
 ------------------------------------------
-TOTAL                     93     32    66%
+TOTAL                     95     32    66%
 ```
 
 ### Conda general tips
