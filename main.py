@@ -6,7 +6,7 @@ import logging
 
 def setup_logging():
     """Adds a configured stream handler to the root logger."""
-    log_level = logging.DEBUG
+    log_level = logging.INFO
     log_date_format = "%H:%M:%S"
     log_format = "%(asctime)s %(levelname)s %(message)s"
 

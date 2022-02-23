@@ -16,6 +16,7 @@ logger = logging.getLogger(__name__)
 class MWM:
     @classmethod
     def get_file_paths(cls):
+        logger.info("get_file_paths() this may take a while")
         file_finder = FileFinder(
             single_start_dir=INPUT_DIR,
             # multi_start_dir=[INPUT_DIR / "2019-09", INPUT_DIR / "2015-12"],
