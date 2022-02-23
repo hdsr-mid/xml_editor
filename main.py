@@ -1,3 +1,4 @@
+from editors.constants import check_constants
 from editors.mwm_xmls import MWM
 
 import logging
@@ -5,7 +6,7 @@ import logging
 
 def setup_logging():
     """Adds a configured stream handler to the root logger."""
-    log_level = logging.INFO
+    log_level = logging.DEBUG
     log_date_format = "%H:%M:%S"
     log_format = "%(asctime)s %(levelname)s %(message)s"
 
@@ -21,5 +22,6 @@ def setup_logging():
 
 if __name__ == "__main__":
     logger = setup_logging()
+    check_constants()
     MWM.run_mwm()
     logger.info("shutting down")
