@@ -305,7 +305,7 @@ class MWM:
         directory = new_filename.parent
         if not directory.is_dir():
             os.mkdir(directory)
-        tree.write(file_or_filename=new_filename, encoding="UTF-8", xml_declaration=True)
+        tree.write(file=new_filename.as_posix(), encoding="UTF-8", xml_declaration=True)
 
     @classmethod
     def run_mwm(cls) -> None:
