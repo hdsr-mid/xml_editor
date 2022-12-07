@@ -32,6 +32,38 @@ MWM: edit .xml:
 </TimeSeries>
 ```
 
+UPDATE Roger 30 nov 22 trello:
+HKV kwam erachter dat een flagsource niet meegekopieerd wordt van RUW naar Werkfilter. 
+Deltares gaat dat niet oplossen, maar kwam erachter dat onder water de flagsource UR verwees naar een ID=19 die 
+ook al in gebruik was voor een andere functie, nl. oscillatie-detectie. 
+Nut & noodzaak voor flagsource UR zijn nog eens tegen het licht gehouden en besloten is om deze uit FEWS te slopen. 
+De beoogde performance-optimalisatie van flagsource UR blijkt overbodig, omdat de flagsource alleen voorkomt bij 
+een beperkt aantal tijdreeksen en eenvoudig middels moduleInstance, parameter en qualifier ingeperkt kan worden, 
+dus performance al geoptimaliseerd is.
+
+Gevolg: de flagsource UR moet eerst uit alle XML-bestanden van MWM verwijderd worden en de data uit FEWS-WIS
+eveneens, waarna de gehele historie opnieuw ingelezen kan worden.
+
+Vraag aan Renier:
+1) zou je het script willen aanpassen?
+2) zou je willen zorgen dat alle XML-bestanden voor de gehele historie opnieuw aangemaakt worden?
+3) daarna het stokje doorgeven aan Job ...
+
+- MWM .xml new:
+```
+<?xml version='1.0' encoding='UTF-8'?>
+<TimeSeries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="http://www.wldelft.nl/fews/PI http://fews.wldelft.nl/schemas/version1.0/pi-schemas/pi_timeseries.xsd">
+	<series>
+		<header>
+			...
+		</header>
+		<event comment="" date="2016-10-17" flag="3" time="08:31:44" value="-0.090" />
+	</series>
+</TimeSeries>
+```
+
+
+
 ### Usage
 1. build conda environment from file if you don't have environment already
 ```

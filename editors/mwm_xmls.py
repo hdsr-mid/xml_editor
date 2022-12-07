@@ -51,7 +51,7 @@ class MWM:
                     # empty comment field
                     elem.attrib["comment"] = ""
                 # add flagSource
-                elem.attrib["flagSource"] = "UR"
+                # elem.attrib["flagSource"] = "UR"
                 # alphabetically sort comment keys
                 new_data = dict(sorted(elem.attrib.items()))
                 elem.attrib.clear()
