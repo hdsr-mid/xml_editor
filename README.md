@@ -3,6 +3,9 @@
 * Author: Renier Kramer, renier.kramer@hdsr.nl
 * Python version: 3.7
 
+### Workflow
+No workflow as this was a one time project. 
+
 ### Description
 MWM: edit .xml:
 - edit event field 'comment' was used for a link to .jpg as MWM-app did not facilitate comments, but does now. So change it to comment=""
@@ -87,20 +90,18 @@ None
 All contributions, bug reports, bug fixes, documentation improvements, enhancements 
 and ideas are welcome on https://github.com/hdsr-mid/xml_editor/issues
 
-### Test Coverage 
-Project holds no tests
+### Test Coverage (October 23, 2023)
 ```
----------- coverage: platform win32, python 3.7.12-final-0 -----
+---------- coverage: platform win32, python 3.7.12-final-0 -----------
 Name                   Stmts   Miss  Cover
 ------------------------------------------
-editors\constants.py       6      0   100%
-editors\mwm_xmls.py       64     14    78%
+editors\constants.py      11      4    64%
+editors\mwm_xmls.py       56     15    73%
 editors\utils.py           7      0   100%
-main.py                   18     18     0%
+main.py                   20     20     0%
 ------------------------------------------
-TOTAL                     95     32    66%
+TOTAL                     94     39    59%
 ```
-
 
 
 ### Conda general tips
